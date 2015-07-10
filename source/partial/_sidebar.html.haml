@@ -1,0 +1,23 @@
+%header#header.navbar.navbar-fixed-top.section.nopt.nopb.nobb{:role => "banner"}
+  .container.nopl.nopr
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".bs-navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    / Start Navigation
+    %h1.logo
+      %a{:href => "index.html"}
+    %nav.collapse.navbar-collapse.bs-navbar-collapse.navbar-right{:role => "navigation"}
+      %ul.nav.navbar-nav
+        %li
+          %a.nosotros{:href => "#inicio"} Inicio
+        %li
+          %a.casos{:href => "#nosotros"} Nosotros
+        %li
+          %a.testimonios{:href => "#manifiesto"} Manifiesto
+        %li
+          %a.clientes{:href => "#casos"} Casos de exito
+        %li
+          %a.contacto{:href => "#contacto"} Contacto

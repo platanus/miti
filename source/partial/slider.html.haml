@@ -1,0 +1,17 @@
+%section#inicio.section.tp-banner-container
+  .tp-banner
+    %ul
+      - (1..3).each do |i|
+        %li{"data-duration" => "12000", "data-masterspeed" => "700", "data-slotamount" => "5", "data-transition" => "fade"}
+          %img{:alt => "slidebg1", "data-bgfit" => "cover", "data-bgposition" => "30% 40%", "data-bgrepeat" => "no-repeat", :src => "img/fondo.jpg"}
+            .tp-caption.boxllamado.col-lg-6.col-md-6{"data-captionhidden" => "on", "data-endspeed" => "300", "data-speed" => "800", "data-start" => "800", "data-x" => "0", "data-y" => "275"}
+              %h2
+                Asociación por una
+                %br/
+                MEJOR
+                %b INDUSTRIA TI 
+              %p
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                %br/
+                Aenean commodo ligula eget dolor. Aenean massa.
+        
