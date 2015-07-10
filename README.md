@@ -1,23 +1,3 @@
-# Bootstrap Site
-
-## Instalación
-
-Bootstrap Site es una extensión de [Middleman](http://middlemanapp.com/).
-
-**1) Bajar este template y ponerlo en la carpeta ~/.middleman **
-
-```bash
-git clone git@bitbucket.com:depointless/bootstrap-site.git ~/.middleman/bootstrap-site
-```
-
-**2) Crear un nuevo Sitio (nuevo proyecto):**
-
-```bash
-# Reemplazar 'nombre-sitio' con el nombre que corresponda
-middleman init nombre-sitio --template=bootstrap-site
-cd nombre-sitio
-bundle install  # Instalar dependencias
-```
 
 **Pre-Requisitos**
 
