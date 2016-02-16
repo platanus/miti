@@ -36,6 +36,15 @@ end
 #end
 
 
+# To deploy the build directory to a remote host via rsync:
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host = "deploy.2brains.cl"
+  deploy.path = "/home/prod/webapps/miti/dist"
+  deploy.user = "prod"
+  deploy.clean = true
+end
+
 helpers do
   def is_page_selected(page)
     current_page.url == page ? "current" : ''
