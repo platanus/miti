@@ -6,8 +6,9 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 set :partials_dir, 'partial'
 set :haml, { :ugly => true, :format => :html5 }
+
 #activate :minify_html
-#activate :livereload
+activate :livereload
 #activate :asset_hash
 activate :cache_buster
 
@@ -23,7 +24,7 @@ end
 #configure :build do
 #  compass_config do |config|
 #    config.sass_options = {:debug_info => false}
-#    config.sass_options = {:line_comments => false}
+#    config.sass_options = {:line_comments => false} 
 #  end
 #end
 
