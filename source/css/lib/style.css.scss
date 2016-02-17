@@ -212,9 +212,9 @@ header {
 	p {
 		font-size: $parrafo;
 		margin: 30px 0%;
-  	margin-bottom: 80px;
-  	font-weight: normal;
-	  @media (max-width:767px) {
+	  	margin-bottom: 80px;
+	  	font-weight: normal;
+		@media (max-width:767px) {
 			margin: 30px 0%;
 		}
 	}
@@ -229,11 +229,33 @@ header {
 	.ico-big {
 		margin-bottom: 20px;
 		padding: 10px;
-	  width: 64px;
-	  display: inline-block;
-	  height: 64px;
-	  line-height: 38px;
+		width: 64px;
+		display: inline-block;
+		height: 64px;
+		line-height: 38px;
 	}
+	.listado-errores {
+		ul {
+		    margin: 20px 0;
+		    text-align: left;
+		    padding: 0;
+			li {
+				list-style: none;
+				span {
+					text-align: left;
+					color: red;
+				}
+			}			
+		}
+	}
+	.mensaje-enviado {
+		margin: 20px 0; 
+		display: none;
+		span {
+			color: green;
+		}
+	}
+	
 }
 
 
@@ -464,8 +486,8 @@ header {
   	}
   }
   .contact-form {
-  	input, textarea {
-  	width: 100%;
+  	input {
+  		width: 100%;
 		border: none;
 		border-bottom: 1px solid #ccc;
 		font-size: $parrafo + 4;
@@ -475,13 +497,18 @@ header {
 		resize: vertical;
 		@include transition (border .3 ease);
 		&.error {
-	  	border-bottom-color: red;
-	  }
+			color:red;
+	  		border-bottom-color: red;
+	    }
 		&:focus {
 			outline: none;
 			border-bottom-color: $negro;
 		}
   	}
+  	textarea {
+  		@extend input;
+		min-height: 80px;
+	}
   	input[type="submit"] {
   		background: $celeste;
   		padding: 15px;

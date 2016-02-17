@@ -106,16 +106,30 @@
               = data.general.phone
         %form.contact-form.animate{:action => "", "data-animate" => "fadeInUp"}
           .col-lg-6
-            %input{:type => "text", :placeholder => "Nombre"}/
+            %input.error{:name => "nombre", :type => "text", :placeholder => "Nombre"}/
           .col-lg-6
-            %input{:type => "text", :placeholder => "E-Mail"}/
+            %input{:name => "email", :type => "text", :placeholder => "E-Mail"}/
           .col-lg-6
-            %input{:type => "text", :placeholder => "Teléfono"}/
+            %input{:name => "telefono", :type => "text", :placeholder => "Teléfono"}/
           .col-lg-6
-            %input{:type => "text", :placeholder => "Empresa"}/
+            %input{:name => "empresa", :type => "text", :placeholder => "Empresa"}/
           .col-lg-12
-            %textarea{:name => "", :rows => "1", :placeholder => "Mensaje"}
+            %textarea{:name => "mensaje", :rows => "1", :placeholder => "Mensaje"}
           .overview
+            .col-lg-12.listado-errores
+              %ul
+                %li
+                  %span
+                    * Ingrese su Nombre
+                %li
+                  %span
+                    * Ingrese su Email
+                %li
+                  %span
+                    * Ingrese su Mensaje
+            .col-lg-12.mensaje-enviado
+              %span
+                Mensaje enviado correctamente, gracias por contactarnos.
             .col-lg-3
             .col-lg-6
               %input{:type => "submit", :value => "Hablemos"}/
