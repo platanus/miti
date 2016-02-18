@@ -84,7 +84,7 @@
   Contacto
   \==================================================
 %section#contacto.section
-  .container
+  .container{"ng-controller" => "ContactCtrl"}
     .row
       .col-md-8.centrado.nofloat
         .overview
@@ -104,37 +104,39 @@
             %img.animate{:src => "img/ico-phone.png", :alt => "", "data-animate" => "fadeInUp"}/
             %span.animate{"data-animate" => "fadeInUp"}
               = data.general.phone
-        %form.contact-form.animate{:action => "", "data-animate" => "fadeInUp"}
-          .col-lg-6
-            %input.error{:name => "nombre", :type => "text", :placeholder => "Nombre"}/
-          .col-lg-6
-            %input{:name => "email", :type => "text", :placeholder => "E-Mail"}/
-          .col-lg-6
-            %input{:name => "telefono", :type => "text", :placeholder => "Teléfono"}/
-          .col-lg-6
-            %input{:name => "empresa", :type => "text", :placeholder => "Empresa"}/
-          .col-lg-12
-            %textarea{:name => "mensaje", :rows => "1", :placeholder => "Mensaje"}
+        %form.contact-form.animate{"name" => "form", "data-animate" => "fadeInUp", "ng-submit" => "processForm()"}
+          .row
+            .col-lg-6.form-group
+              %input{:name => "name", :type => "text", :placeholder => "Nombre", "ng-model" => "contactForm.name.value"}/
+              %span{:class => "help-block", "ng-show" => "contactForm.name.errors"}
+                *{{contactForm.name.errors}}
+            .col-lg-6.form-group
+              %input{:name => "email", :type => "email", :placeholder => "E-Mail", "ng-model" => "contactForm.email.value"}/
+              %span{:class => "help-block", "ng-show" => "contactForm.email.errors"}
+                *{{contactForm.email.errors}}
+          .row
+            .col-lg-6.form-group
+              %input{:name => "phone", :type => "text", :placeholder => "Teléfono", "ng-model" => "contactForm.phone.value"}/
+              %span{:class => "help-block", "ng-show" => "contactForm.phone.errors"}
+                *{{contactForm.phone.errors}}
+            .col-lg-6.form-group
+              %input{:name => "company", :type => "text", :placeholder => "Empresa", "ng-model" => "contactForm.company.value"}/
+              %span{:class => "help-block", "ng-show" => "contactForm.company.errors"}
+                *{{contactForm.company.errors}}
+          .row
+            .col-lg-12.form-group
+              %textarea{:name => "message", :rows => "1", :placeholder => "Mensaje", "ng-model" => "contactForm.message.value"}
+              %span{:class => "help-block", "ng-show" => "contactForm.message.errors"}
+                *{{contactForm.message.errors}}
+            
           .overview
-            .col-lg-12.listado-errores
-              %ul
-                %li
-                  %span
-                    * Ingrese su Nombre
-                %li
-                  %span
-                    * Ingrese su Email
-                %li
-                  %span
-                    * Ingrese su Mensaje
             .col-lg-12.mensaje-enviado
-              %span
-                Mensaje enviado correctamente, gracias por contactarnos.
+              %span{"ng-show" => "form.$submitted"}
+                {{sendStatus}}
             .col-lg-3
             .col-lg-6
               %input{:type => "submit", :value => "Hablemos"}/
             .col-lg-3
-
 
         
 
