@@ -490,6 +490,11 @@ header {
 			border-bottom-color: $negro;
 		}
   	}
+  	.form-group {
+  		.help-block {
+  			color: red;
+  		}
+  	}
   	.help-inline {
 		&.error {
 			color:red;
