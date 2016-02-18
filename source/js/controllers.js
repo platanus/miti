@@ -30,7 +30,7 @@ module.controller('ContactCtrl', ['$scope', '$resource', function ($scope, $reso
         $scope.sendStatus = "";
         $scope.contactForm = {};
 
-        var Send = $resource('http://miti.cl/restmail', {}, {
+        var Send = $resource('/restmail', {}, {
             send: { method: 'POST' }
         });
 
