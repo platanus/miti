@@ -1,8 +1,8 @@
 ---
 proyects:
-  - title: "Nombre del proyecto 1"
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    image: "img/casos/1.jpg"
+  - title: "Get On Board"
+    text: "Conectamos a los mejores talentos digitales con las empresas donde vale la pena trabajar."
+    image: "img/casos/get-on-board.png"
   - title: "Nombre del proyecto 2"
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     image: "img/casos/2.jpg"
