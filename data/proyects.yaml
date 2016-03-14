@@ -8,7 +8,7 @@ proyects:
     image: "img/casos/surbtc.png"
   - title: "CiudadGIS"
     text: "Ciudad GIS: Inteligencia con igualdad para todos los municipios del país."
-    image: "img/casos/ciudagis.jpg"
+    image: "img/casos/ciudadgis.jpg"
   - title: "Nombre del proyecto 3"
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     image: "img/casos/3.jpg"
