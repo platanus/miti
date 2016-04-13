@@ -37,5 +37,5 @@ proyects:
     text: "Plataforma que predice fallas en la red eléctrica de Santiago y gestiona el despacho de cuadrillas para su reparación."
     image: "img/casos/magnet-despacho.jpg"
   - title: "Chispers"
-    text: "<a href='www.chispers.cl/'>Chispers</a>: Desarrollo de aplicaciones nativas y backend web para área de innovación de Chilectra."
+    text: "<a href='http://www.chispers.cl/'>Chispers</a>: Desarrollo de aplicaciones nativas y backend web para área de innovación de Chilectra."
     image: "img/casos/magnet-chispers.jpg"
