@@ -424,6 +424,21 @@ header {
 			.img-responsive {
 				margin: 0 auto;
 			}
+			@media (min-width: 768px) and (max-width: 991px) {
+				max-height: 200px;
+				min-height: 200px;
+				overflow: hidden;
+			}
+			@media (min-width: 992px) and (max-width: 1199px) {
+				max-height: 173px;
+				min-height: 173px;
+				overflow: hidden;
+			}
+			@media (min-width: 1200px){
+				max-height: 214px;
+				min-height: 214px;
+				overflow: hidden;
+			}
 		}
 		&:nth-child(5) {
 			clear: both;
