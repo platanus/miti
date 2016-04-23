@@ -20,7 +20,8 @@
           .dummy
           .img-container
             .centrado
-            %img{:src => company.image, :alt => company.title}/
+            %a{:href => company.url }
+              %img{:src => company.image, :alt => company.title}/
 
 /
   \==================================================
