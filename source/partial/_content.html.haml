@@ -20,7 +20,8 @@
           .dummy
           .img-container
             .centrado
-            %img{:src => company.image, :alt => company.title}/
+            %a{:href => company.url }
+              %img{:src => company.image, :alt => company.title}/
 
 /
   \==================================================
@@ -37,7 +38,7 @@
       .col-md-12.centrado.nofloat
         .overview
           %h3.animate{"data-animate" => "fadeInUp"}
-            Manifiesto
+            Nuestros principos
           .tabla
             - data.manifests.manifests.each_with_index do |manifest, index|
               .col-lg-4.col-md-4.col-sm-6.col-xs-12.content-manifiesto
@@ -90,20 +91,21 @@
         .overview
           %h3.animate{"data-animate" => "fadeInUp"}
             Contacto
-          %p.animate{"data-animate" => "fadeInUp"}
-            = data.general.contact
+        
           .col-lg-3.data-contact
+            /
+              %img.animate{:src => "img/ico-send.png", :alt => "", "data-animate" => "fadeInUp"}/
+              %span.animate{"data-animate" => "fadeInUp"}
+                = data.general.email
+          .col-lg-6.data-contact
             %img.animate{:src => "img/ico-send.png", :alt => "", "data-animate" => "fadeInUp"}/
             %span.animate{"data-animate" => "fadeInUp"}
               = data.general.email
-          .col-lg-6.data-contact
-            %img.animate{:src => "img/ico-dir.png", :alt => "", "data-animate" => "fadeInUp"}/
-            %span.animate{"data-animate" => "fadeInUp"}
-              = data.general.address
-          .col-lg-3.data-contact
-            %img.animate{:src => "img/ico-phone.png", :alt => "", "data-animate" => "fadeInUp"}/
-            %span.animate{"data-animate" => "fadeInUp"}
-              = data.general.phone
+            /
+              .col-lg-3.data-contact
+                %img.animate{:src => "img/ico-phone.png", :alt => "", "data-animate" => "fadeInUp"}/
+                %span.animate{"data-animate" => "fadeInUp"}
+                  = data.general.phone
         %form.contact-form.animate{"name" => "form", "data-animate" => "fadeInUp", "ng-submit" => "processForm()"}
           .row
             .col-lg-6.form-group
@@ -162,14 +164,15 @@
   .container.acenter
     %img.centrado{:src => "img/logo-transparente.png", :alt => ""}/
     %ul
+      /
+        %li
+          %a.fb{:href => ""}
+        %li
+          %a.tw{:href => ""}
+        %li
+          %a.in{:href => ""}
       %li
-        %a.fb{:href => ""}
-      %li
-        %a.tw{:href => ""}
-      %li
-        %a.in{:href => ""}
-      %li
-        %a.be{:href => ""}
+        %a.tw{:href => "https://twitter.com/miti_chile"}
     %p.nomb.nomt.col-lg-4.nofloat.center
       ©2016 MITI, todos los derechos reservados.
 
