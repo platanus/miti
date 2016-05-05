@@ -39,4 +39,9 @@ proyects:
   - title: "Chispers"
     text: "<a href='http://www.chispers.cl/'>Chispers</a>: Desarrollo de aplicaciones nativas y backend web para área de innovación de Chilectra."
     image: "img/casos/magnet-chispers.jpg"
-
+  - title: "PrometeoUC"
+    text: "Proyecto que ayudó a la Pontificia Universidad Católica a ser 1ra. en Sudamérica el 2014. Se formó un equipo de innovación multidisciplinario cuya labor aportó a que la Pontificia Universidad de Chile llegara a ser la Nro. 1 en Sudamerica el 2014, en el ranking QS"
+    image: "img/casos/leansight-puc.jpg"
+  - title: "<a href='http://www.cdecsic.cl/'>Sistema Operación real CDECSIC</a>"
+    text: "Un proyecto para administarar la Operación real del Sistema Interconectado Central, que pasó de una evaluación de millones de dólares y años de implementación, a 3 meses para generar valor con una proyección total del 10% del presupuesto original"
+    image: "img/casos/leansight-cdecsic.jpg" 
