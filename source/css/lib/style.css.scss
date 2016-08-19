@@ -454,6 +454,40 @@ header {
 	}
 }
 
+/*	Directorio
+	==================================================*/
+#directorio {
+	background: $blanco;
+	h3 {
+		color: $negro;
+		background-image: url(../img/ico-gusano-black.png);
+		margin-bottom: 40px;
+	}
+	.directores {
+		.overview > .col-lg-2 {
+			margin-bottom: 20px;
+			@media (min-width: 991px) {
+				width: 20%;
+			}
+			h6 {
+				font-size: $parrafo + 2;
+			}
+			p {
+				margin: 0 auto;
+				font-style: normal;
+				letter-spacing: 0;
+				line-height: 24px;
+				font-family: $ptsans;
+				color: $sombra;
+				&.bold {
+					font-weight: bold;
+					color: #333;
+				}
+			}
+		}
+	}
+}
+
 /*	Contacto
 	==================================================*/
 
@@ -530,27 +564,6 @@ header {
 			}
   	}
   }
-	.directores {
-		margin-top: 60px;
-		.overview > .col-lg-2 {
-			margin-bottom: 20px;
-			@media (min-width: 991px) {
-				width: 20%;
-			}
-			h6 {
-				font-size: $parrafo + 2;
-			}
-			p {
-				margin: 0 auto;
-				font-style: normal;
-				letter-spacing: 0;
-				&.bold {
-					font-weight: bold;
-					color: #333;
-				}
-			}
-		}
-	}
 }
 
 

@@ -78,8 +78,24 @@
   End Casos de éxito
 
 
-
-
+/
+  Directorio
+  \==================================================
+%section#directorio.section
+  .container
+    .row.directores
+      .overview
+        %h3.animate{"data-animate" => "fadeInUp"} Directorio
+        - data.directory.directory.each_with_index do |director, index|
+          .col-xs-12.col-sm-6.col-md-2.col-lg-2
+            %h6.animate{"data-animate" => "fadeInUp"}
+              = director.name
+            %p.bold.animate{"data-animate" => "fadeInUp"}
+              = director.title
+            %p.animate{"data-animate" => "fadeInUp"}
+              = director.email
+            %p.animate{"data-animate" => "fadeInUp"}
+              = director.phone
 
 /
   Contacto
@@ -139,21 +155,6 @@
             .col-lg-6
               %input{:type => "submit", :value => "Hablemos"}/
             .col-lg-3
-
-
-    .row.directores
-      .overview
-        %h3 Directorio
-        - data.directory.directory.each_with_index do |director, index|
-          .col-xs-12.col-sm-6.col-md-2.col-lg-2
-            %h6.animate{"data-animate" => "fadeInUp"}
-              = director.name
-            %p.bold.animate{"data-animate" => "fadeInUp"}
-              = director.title
-            %p.animate{"data-animate" => "fadeInUp"}
-              = director.email
-            %p.animate{"data-animate" => "fadeInUp"}
-              = director.phone
 /
   \==================================================
   End Contacto
