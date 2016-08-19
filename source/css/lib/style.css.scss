@@ -102,7 +102,7 @@ header {
 			text-indent: -9999px;
 			overflow: hidden;
 			float: left;
-			@media (max-width: 767px) {
+			@media (max-width: 991px) {
 				background-size: 90%;
   			margin-left: 20px;
   			width: 160px;
@@ -118,6 +118,9 @@ header {
 		ul {
 			li {
 				margin: 0 10px;
+				@media (max-width: 991px) {
+					margin: 0 5px;
+				}
 				&:last-child {
 					margin-right:0;
 				}
