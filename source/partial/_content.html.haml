@@ -91,7 +91,7 @@
         .overview
           %h3.animate{"data-animate" => "fadeInUp"}
             Contacto
-        
+
           .col-lg-3.data-contact
             /
               %img.animate{:src => "img/ico-send.png", :alt => "", "data-animate" => "fadeInUp"}/
@@ -130,7 +130,7 @@
               %textarea{:name => "message", :rows => "1", :placeholder => "Mensaje", "ng-model" => "contactForm.message.value"}
               %span{:class => "help-block", "ng-show" => "contactForm.message.errors"}
                 *{{contactForm.message.errors}}
-            
+
           .overview
             .col-lg-12.mensaje-enviado
               %span{"ng-show" => "form.$submitted"}
@@ -140,9 +140,20 @@
               %input{:type => "submit", :value => "Hablemos"}/
             .col-lg-3
 
-        
 
-
+    .row.directores
+      .overview
+        %h3 Directorio
+        - data.directory.directory.each_with_index do |director, index|
+          .col-xs-12.col-sm-6.col-md-2.col-lg-2
+            %h6.animate{"data-animate" => "fadeInUp"}
+              = director.name
+            %p.bold.animate{"data-animate" => "fadeInUp"}
+              = director.title
+            %p.animate{"data-animate" => "fadeInUp"}
+              = director.email
+            %p.animate{"data-animate" => "fadeInUp"}
+              = director.phone
 /
   \==================================================
   End Contacto
@@ -179,4 +190,4 @@
 
 /
   \==================================================
-  End Footer 
+  End Footer

@@ -74,7 +74,7 @@ h3 {
 	padding-bottom: 40px;
 	background: url(../img/ico-gusano.png) no-repeat bottom center;
 	font-weight: bold;
-} 
+}
 
 
 header {
@@ -90,7 +90,7 @@ header {
 				ul {
 				  display: block !important;
 				}
-			} 
+			}
 	}
 	.logo {
 		margin: 0;
@@ -109,7 +109,7 @@ header {
 				height: 65px;
 			}
 		}
-		
+
 	}
 	.navbar-toggle .icon-bar {
 		background: $blanco;
@@ -175,7 +175,7 @@ header {
 	@media (max-width: 991px) {
 		.nav > li > a {
 			padding: 10px 8px;
-		} 
+		}
     }
     @media (max-width: 767px) {
 		.nav > li {
@@ -193,8 +193,8 @@ header {
 				}
 			}
 
-			
-		} 
+
+		}
     }
 }
 
@@ -235,12 +235,12 @@ header {
 		line-height: 38px;
 	}
 	.mensaje-enviado {
-		margin: 20px 0; 
+		margin: 10px 0;
 		span {
 			color: green;
 		}
 	}
-	
+
 }
 
 
@@ -340,7 +340,7 @@ header {
 
 
 /*	Manifiesto
-	==================================================*/ 
+	==================================================*/
 #manifiesto {
 	background: $blanco;
 	h3 {
@@ -378,10 +378,10 @@ header {
 		@media (max-width: 991px) {
 			&:nth-child(3) {
 				clear: both;
-			}	
+			}
 			&:nth-child(4) {
 				clear: none;
-			}	
+			}
 		}
 	}
 	.tabla {
@@ -391,7 +391,7 @@ header {
 
 
 /*	Casos de éxito
-	==================================================*/ 
+	==================================================*/
 #casos {
 	background: #f5f5f5;
 	h3 {
@@ -446,16 +446,16 @@ header {
 		@media (max-width: 991px) {
 			&:nth-child(4) {
 				clear: both;
-			}	
+			}
 			&:nth-child(5) {
 				clear: none;
-			}	
+			}
 		}
 	}
 }
 
 /*	Contacto
-	==================================================*/ 
+	==================================================*/
 
 #contacto {
 	background: $blanco;
@@ -472,7 +472,7 @@ header {
 		line-height: 24px;
 		margin-bottom: 35px;
 		letter-spacing: 1px;
-  } 
+  }
   .data-contact {
   	margin-bottom: 30px;
   	span {
@@ -523,13 +523,34 @@ header {
   	input[type="submit"] {
   		background: $celeste;
   		padding: 15px;
-			margin-top: 30px;
+			margin-top: 0px;
 			color: $blanco;
 			&:focus {
 				border-bottom-color: transparent;
 			}
   	}
   }
+	.directores {
+		margin-top: 60px;
+		.overview > .col-lg-2 {
+			margin-bottom: 20px;
+			@media (min-width: 991px) {
+				width: 20%;
+			}
+			h6 {
+				font-size: $parrafo + 2;
+			}
+			p {
+				margin: 0 auto;
+				font-style: normal;
+				letter-spacing: 0;
+				&.bold {
+					font-weight: bold;
+					color: #333;
+				}
+			}
+		}
+	}
 }
 
 
@@ -537,7 +558,7 @@ header {
 
 
 /*	Footer
-	==================================================*/ 
+	==================================================*/
 footer {
 	background: $azul;
 	padding: 20px 0;
@@ -556,9 +577,9 @@ footer {
 		list-style: none;
 		padding: 0;
 		margin: 20px;
-		display: block; 
+		display: block;
 		li {
-			display: inline-block; 
+			display: inline-block;
 			margin: 5px;
 			a {
 				background: url(../img/ico-social.png) no-repeat;
@@ -586,5 +607,3 @@ footer {
 		}
 	}
 }
-
-
