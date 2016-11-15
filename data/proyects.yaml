@@ -9,7 +9,7 @@ proyects:
   - title: "CiudadGIS"
     text: "Ciudad GIS: Inteligencia con igualdad para todos los municipios del país."
     image: "img/casos/ciudadgis.jpg"
-  - title: "<a href="https://beebop.cloud/">Beebop.cloud</a>"
+  - title: "<a href='https://beebop.cloud/'>Beebop.cloud</a>"
     text: "Primera Cloud pública de Chile. La Cloud con mejor rendimiento y mejor latencia de Chile."
     image: "img/casos/beebop.png"
   - title: "Boeki"
