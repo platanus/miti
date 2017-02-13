@@ -443,17 +443,19 @@ header {
 				overflow: hidden;
 			}
 		}
-		&:nth-child(5) {
-			clear: both;
-		}
-		@media (max-width: 991px) {
-			&:nth-child(4) {
+		@media (min-width: 992px) {
+			&:nth-child(3n+2) {
 				clear: both;
 			}
-			&:nth-child(5) {
-				clear: none;
+		}
+		@media (max-width: 991px) {
+			&:nth-child(2n+2) {
+				clear: both;
 			}
 		}
+		/*&:last-child p {
+			border-bottom: 0;
+		}*/
 	}
 }
 
